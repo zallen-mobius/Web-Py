@@ -1,0 +1,25 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Este archivo CSS servirá para el formulario de acceso */
+
+:root{
+        --color_1: #ffffff;
+        --color_2: #000000;
+        --color_3: #50e1cd;
+        --color_4: #ff9191;
+}
+
+/* - - - Estilo a etiquetas - - - */ 
+
+
+/* - - - Estilo a clases - - - */
+
+
+/* - - - Estilo a identificadores - - - */
+#formulario{
+        background-color: var(--color_1);
+}               /* #formulario */

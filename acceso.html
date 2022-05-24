@@ -12,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Proyecto </title>
     <!-- links -->
-    <link rel="stylesheet" href="/src/styles/style.css"">       <!-- Se carga el archivo de estilos general -->
+    <link href="/src/styles/style.css" rel="stylesheet" >       <!-- Se carga el archivo de estilos general -->
+    <link href="/src/styles/acceso.css" rel="stylesheet" >       <!-- Archivo de estilo de formulario de acceso -->
     <link rel="preconnect" href="https://fonts.googleapis.com">     <!-- uso de Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
@@ -39,14 +40,20 @@
             </nav>      <!-- nav barra menu -->
             <div class="f" id="contenido">
                 
-                <div class="k" id="aviso-falta">
-                    <h1> Ups... ¡Estamos trabajando en ello! </h1> <br>
-                    <div>
-                        <img src="/src/img/aviso.png"/> <img src="/src/img/codigo.png"/>
-                    </div>
-                </div>      <!-- div k aviso-falta-->
+                <div class="k" id="formulario">
+                    <h1> Ingresa a tu cuenta </h1> <br>
+                    <form class="l" id="14">
+                        <fieldset>
+                            <div class="m" id="15">
+                                <img src="/src/img/account_1.png">  <br>
+                                <h3> usuario: </h3> <input type="text"> <br>
+                                <h3> contraseña: </h3> <input type="password"> <br>
+                            </div>      <!-- div m 15 -->
+                        </fieldset>
+                    </form>     <!-- form l 14-->
+                </div>      <!-- div k formulario-->
 
-            </div>      <!-- section f 8-->
+            </div>      <!-- section f formulario-->
             <footer class="barra" id="pie">
                 <div class="h" id="titulo">
                     <h2> WEB-PY punto com </h2>
@@ -74,6 +81,6 @@
                     </ul>       <!-- ul j scl-logos --> 
                 </div>      <!-- div i 11 -->
             </footer>       <!-- footer barra pie -->
-        </div>      <!-- div page 0 -->
+        </div>      <!-- div a page -->
     </body>
 </html>

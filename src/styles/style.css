@@ -34,6 +34,19 @@ ul{
 #aviso-falta img{
         width: 100px;
 }
+#aviso-falta h1{
+        font-family: 'Rubik', sans-serif;
+}               /* #aviso-falta h1 */
+#menu-opciones li{
+        padding: 10px;
+}               /* #menu-opciones li */
+#menu-opciones li a{
+        text-decoration: none;
+        margin: 0 auto;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        color: var(--color_3);
+}               /* #menu-opciones li a */
 #titulo h2{
         font-family: 'Rubik Puddles', cursive;
         color: var(--color_3);
@@ -61,9 +74,9 @@ ul{
 
 /* - - - Estilo a identificadores - - - */
 #aviso-falta{
-        display: flex;
+        display: block;
         align-items: center;
-        text-align: center;
+        padding-top: 100px;
         margin: 36px;
         background-color: var(--color_1);
         text-align: center;
@@ -72,14 +85,15 @@ ul{
 #contenido{
         height:  calc(100% - 200px);
         min-height: calc(100% - 200px);
-}
+}               /* #contenido */
 #menu-logo, #menu-cuenta{
         width: 80px;
         padding: 10px;
 }               /* .scl-logo, #menu-logo, #menu-cuenta */
-#menu-opciones li{
-        padding: 10px;
-}               /* #menu-opciones li */
+#menu-opciones{
+        width: 50%;
+        margin: 0 auto;
+}               /* #menu-opciones */
 #pie{
         display: block;
         text-align: center;
@@ -89,6 +103,7 @@ ul{
 }               /* #titulo */
 
 /* Fuentes
-    font-family: 'Rubik Bubbles', cursive;
-    font-family: 'Rubik Puddles', cursive;
+        font-family: 'Rubik', sans-serif;
+        font-family: 'Rubik Bubbles', cursive;
+        font-family: 'Rubik Puddles', cursive;
 */
