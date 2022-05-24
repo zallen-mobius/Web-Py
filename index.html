@@ -13,11 +13,14 @@
     <title> Proyecto </title>
     <!-- links -->
     <link rel="stylesheet" href="/src/style.css">       <!-- Se carga el archivo de estilos general -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">     <!-- uso de Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">     <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
 </head>
     <body>
         <div class="a" id="page">
             <nav class="barra" id="menu">      <!--La sección del menu superior, usamos nav porque se usa para navegar en el sitio.-->
-                <img src="src/img/icon.png" alt="Aque debería ir el logo" class="b" id="menu-logo">     <!-- Flaticon -->
+                <a href="index.html"> <img src="src/img/icon.png" alt="Aque debería ir el logo" class="b" id="menu-logo"> </a>      <!-- Flaticon -->
                 <ul class="c" id="menu-opciones">
                     <li>
                         <a href="#"> Jugar </a>     <!-- Esta pestaña llevara a un formulario que pedira un codigo -->
@@ -32,16 +35,18 @@
                         <a href="#"> Sobre nosotros </a>     <!-- Esta pestaña llevara a un formulario que pedira un codigo -->
                     </li>       <!-- li 7 -->
                 </ul>       <!-- ul c menu-opciones -->
-                <img src="src/img/account_2.png" alt="Aqui deveria ir la imagen de cuenta" class="e" id="menu-cuenta">    <!-- Flaticon -->
+                <a href="#"> <img src="src/img/account_2.png" alt="Aqui deveria ir la imagen de cuenta" class="e" id="menu-cuenta"> </a>    <!-- Flaticon -->
             </nav>      <!-- nav barra menu -->
-            <section class="f" id="contenido">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellendus doloremque consequatur porro molestiae natus iure explicabo quod laborum. Fugit vel, quod quisquam dolore necess
-               eum, sequi blanditiis cupiditate temporibus odit excepturi incidunt at laborum perspiciatis a, assumenda rerum corrupti architecto! Laboriosam voluptatibus impedit eum doloribus iusto tempore, ex voluptatum quod eligendi eveniet ali
-                as quaerat similique excepturi suscipit commodi blanditiis dolorem natus cupiditate ut. Debitis, voluptatibus vero similique cupiditate odio sequi numquam ut obcaecati, nam praesentium neque laboriosam quidem inventore a aspernatur. Quidem fugiat consectetur voluptate dolor dol
-                oremque error ipsam maxime, quo accusantium neque iusto. Dolorem explicabo minima cumque obcaecati commodi! Repellat deleniti asperiores nostrum optio debitis aperiam non vitae fugiat eligendi cumque architecto assumenda facere repudiandae recusandae, nesciunt 
+            <div class="f" id="contenido">
+                
+                <div class="k" id="aviso-falta">
+                    <div>
+                        <img src="/src/img/aviso.png"/> <img src="/src/img/codigo.png"/>
+                    </div>
+                    <h1> Ups... ¡Estamos trabajando en ello! </h1>
+                </div>      <!-- div k aviso-falta-->
 
-
-            </section>      <!-- section f 8-->
+            </div>      <!-- section f 8-->
             <footer class="barra" id="pie">
                 <div class="h" id="titulo">
                     <h2> WEB-PY punto com </h2>
