@@ -16,7 +16,7 @@
     <link href="/src/styles/acceso.css" rel="stylesheet" >       <!-- Archivo de estilo de formulario de acceso -->
     <link rel="preconnect" href="https://fonts.googleapis.com">     <!-- uso de Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
 </head>
     <body>
         <div class="a" id="page">
@@ -42,15 +42,22 @@
                 
                 <div class="k" id="formulario">
                     <h1> Ingresa a tu cuenta </h1> <br>
-                    <form class="l" id="14">
-                        <fieldset>
+                    <form class="l" id="14" method="post" action="inicio_sesion.php">
                             <div class="m" id="15">
-                                <img src="/src/img/account_1.png">  <br>
-                                <h3> usuario: </h3> <input type="text"> <br>
-                                <h3> contraseña: </h3> <input type="password"> <br>
+                                <div class="n" id="marco-circular">
+                                    <img src="/src/img/account_1.png" class="formulario-objetos" id="avatar-vacio">  <br>
+                                </div>      <!-- div n marco-circular -->
+                                <div class="formulario-objetos"> <label> usuario: </label> <input type="text"> </div>
+                                <div class="formulario-objetos"> <label> contraseña: </label> <input type="password"> </div>
+                                <div class="n" id="formulario-botones">
+                                    <input type="submit" value="Ingresar">
+                                    <input type="button" value="Cancelar" onclick="location.href='index.html'">
+                                </div>
                             </div>      <!-- div m 15 -->
-                        </fieldset>
                     </form>     <!-- form l 14-->
+                    <div class="links-ayuda"> 
+                        <label> ¿No tienes una cuenta? <a href="#">Crea una aquí. </a> </label> <label>¿Olvidaste tu contraseña? <a href="#">Reestablecela. </a> </label>
+                    </div>
                 </div>      <!-- div k formulario-->
 
             </div>      <!-- section f formulario-->
