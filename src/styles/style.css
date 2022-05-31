@@ -55,6 +55,9 @@ ul{
         display: inline;
         margin: auto;
 }               /* #sc-logos li */
+#scl-logos li a{
+        text-decoration: none;
+}               /* #sc-logos li a */
 #scl-logos li img{
         color: var(--color_3);
 } 
