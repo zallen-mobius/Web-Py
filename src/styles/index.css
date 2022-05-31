@@ -1,0 +1,28 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Este archivo CSS servirá como base para las paginas del proyecto, 
+        por lo que todas las páginas del sitio tendrá este script aplicado
+        con estilos muy básicos para el sitio completo. */
+
+/* - - - Estilo a etiquetas - - - */
+
+/* - - - Estilo a clases - - - */
+.carousel{
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+}
+.carousel label{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    background-color: var(--color_1);
+    color: var(--color_2);
+    border-radius: 10px;
+}
+
+/* - - - Estilo a identificadores - - - */

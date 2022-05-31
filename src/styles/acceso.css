@@ -71,6 +71,7 @@ div.formulario-objetos label, div.formulario-objetos input{
         min-height: 80%;
         width: 40%;
         margin: 50px auto;
+        border: solid var(--color_2) 3px;
         border-radius: 10px;
 }               /* #formulario */
 #formulario-botones{

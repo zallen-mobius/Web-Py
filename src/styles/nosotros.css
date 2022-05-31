@@ -1,0 +1,65 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Este archivo CSS servirá para la página de 'nosotros'. */
+
+/* - - - Estilo a etiquetas - - - */
+.info img{
+    width: 150px;
+    max-height: 100%;
+    height: 80%;
+}
+h1, h2{
+    font-family: 'Cabin Sketch', cursive;
+}
+fieldset{
+    border: solid var(--color_3);
+    border-width: 5px;
+}
+p{
+    font-family: 'Cabin', sans-serif;
+}
+
+/* - - - Estilo a clases - - - */
+.info{
+    background-color: var(--color_1);
+    max-width: 100%;
+    width: 90%;
+    max-height: 25%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+/* - - - Estilo a identificadores - - - */
+
+#contenido{
+    background-color: var(--color_1);
+    min-width: 90%;
+    margin: 30px;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+#informacion{
+    background-color: var(--color_1);
+    max-width: 55%;
+    width: 55%;
+    display: block;
+}
+#mapa{
+    background-color: var(--color_1);
+    max-width: 45%;
+    width: 45%;
+    display: block;
+    text-align: center;
+    padding: auto;
+}
+
+/* Fuentes
+        font-family: 'Cabin', sans-serif;
+        font-family: 'Cabin Sketch', cursive;
+*/
