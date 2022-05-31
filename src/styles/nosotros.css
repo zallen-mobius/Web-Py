@@ -4,60 +4,59 @@
             (Grupo 14)
 */
 
-/* Este archivo CSS servirá para la página de 'nosotros'. */
+/* Estos estilos corresponden a la sección 'nosotros' del sitio web. */
 
 /* - - - Estilo a etiquetas - - - */
 .info img{
     width: 150px;
-    max-height: 100%;
-    height: 80%;
-}
-h1, h2{
+}       /* .info img */
+.info-texto h2, #mapa h1{
     font-family: 'Cabin Sketch', cursive;
+}       /* .info-texto h2, #mapa h1 */
+.info-texto p{
+        font-family: 'Cabin', sans-serif;
+}       /* .info-texto p */
+.info .info-texto{
+    margin-left: 30px;
+    align-items: center;
+}       /* .info .info-texto */
+#mapa h1 {
+    text-align: center;
+}       /* #mapa h1 */
+#mapa-contenido > *{
+    display: inline-flex;
 }
-fieldset{
-    border: solid var(--color_3);
-    border-width: 5px;
-}
-p{
-    font-family: 'Cabin', sans-serif;
+#mapa-contenido img{
+    width: 250px;
 }
 
 /* - - - Estilo a clases - - - */
 .info{
-    background-color: var(--color_1);
-    max-width: 100%;
-    width: 90%;
-    max-height: 25%;
-    height: 25%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid: auto / auto auto;
+    width: 80%;
+    margin: 25px auto;
 }
 
 /* - - - Estilo a identificadores - - - */
-
-#contenido{
-    background-color: var(--color_1);
-    min-width: 90%;
-    margin: 30px;
-    display: flex;
-    padding: 20px;
-    border-radius: 20px;
-}
 #informacion{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 20px;
     background-color: var(--color_1);
-    max-width: 55%;
-    width: 55%;
-    display: block;
-}
+    border-radius: 20px;
+}       /* #informacion */
 #mapa{
     background-color: var(--color_1);
-    max-width: 45%;
-    width: 45%;
-    display: block;
-    text-align: center;
-    padding: auto;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+    padding: 20px 40px 40px 40px;
 }
+
+/* - - - Tutti-frutti - - - */
+
 
 /* Fuentes
         font-family: 'Cabin', sans-serif;

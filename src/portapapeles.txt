@@ -1,0 +1,88 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Este archivo CSS servirá para el formulario de acceso */
+
+/* - - - Estilo a etiquetas - - - */
+#formulario h1{
+        padding: 10px 0;
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+}               /* #formulario */
+.formulario-objetos label{
+        display: inline-block;
+        width: 120px;
+}               /*.formulario-objetos label */
+div.formulario-objetos {
+        padding: 5px 0;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+}               /* .formulario-objetos p */
+div.formulario-objetos label, div.formulario-objetos input{
+        font-family: 'Cabin', sans-serif;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+}
+#formulario form{
+        width: 100%;
+        margin: 0 auto;
+}               /* #formulario form */
+#formulario-botones input{
+        padding: 5px 20px;
+        font-family: 'Cabin', sans-serif;
+        font-size: large;
+}
+
+/* - - - Estilo a clases - - - */
+.formulario-objetos{
+        display: block;
+        margin: 0 auto;
+}               /* .formulario-objetos */
+.links-ayuda{
+        font-size:x-small;
+        width: 90%;
+        margin: 10px auto;
+
+}
+.links-ayuda label{
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+}
+
+/* - - - Estilo a identificadores - - - */
+#avatar-vacio{
+        width: 150px;
+}               /* #avatar-vacio */
+#formulario{
+        background-color: var(--color_1);
+        min-height: 80%;
+        width: 40%;
+        margin: 50px auto;
+        border: solid var(--color_2) 3px;
+        border-radius: 10px;
+}               /* #formulario */
+#formulario-botones{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px 0;
+}               /* #formulario-botones */
+#marco-circular{
+        border: solid var(--color_2);
+        border-radius: 100%;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+}               /* #marco-circular */
+
+/* - - - Tutti-frutti - - - */
+
+/* Fuentes
+        font-family: 'Cabin', sans-serif;
+*/
