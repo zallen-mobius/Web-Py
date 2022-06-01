@@ -7,6 +7,9 @@
 /* Descripción del objetivo del CSS. */
 
 /* - - - Estilo a etiquetas - - - */
+.formulario-objetos input{
+        padding: 0px 2px;
+}
 #formulario > *{
         margin: 0 auto;
 }
@@ -28,7 +31,7 @@
         width: 80%;
         margin: 8px auto;
         display: grid;
-        grid: auto/ 100px auto;
+        grid: auto/ 90px auto;
 
 }               /* .formulario-objetos */
 .links-ayuda{
