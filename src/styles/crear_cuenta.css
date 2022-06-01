@@ -58,6 +58,13 @@ input[type="radio"]{
 #perfil div > input{
         padding-left: 15px;
 }
+#perfil div > input#boton{
+        display: block;
+        align-self: center;
+        padding: 0;
+        width: 150px;
+        margin: 0 auto;
+}
 
 /* - - - Estilo a clases - - - */
 

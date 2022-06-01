@@ -41,7 +41,7 @@
         
         <div id="contenido"> 
             <div id="formulario">
-                <form>
+                <form action="nuevo_usuario.html" method="post">
                     <fieldset id="campos"> <legend> Tus datos </legend>
                         <div>
                             <label for="nombre" class="etiquetas-campos"> Nombre(s): </label> <input type="text" id="nombre" name="nombre">
@@ -58,18 +58,19 @@
                             </div>
                             <h3> <label> Selecciona tu avatar </label> </h3>
                             <div id="avatares">
-                                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" value=1 checked>
+                                <input type="radio" class="btn-check" name="avatar" id="avatar" autocomplete="off" value=1 checked>
                                 <label class="btn btn-secondary" for="option1"> <img src="/src/img/avatares/ava_1.png"> </label>
 
-                                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" value=2>
+                                <input type="radio" class="btn-check" name="avatar" id="avatar" autocomplete="off" value=2>
                                 <label class="btn btn-secondary" for="option2"> <img src="/src/img/avatares/ava_2.png"> </label>
 
-                                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" value=3>
+                                <input type="radio" class="btn-check" name="avatar" id="avatar" autocomplete="off" value=3>
                                 <label class="btn btn-secondary" for="option3"> <img src="/src/img/avatares/ava_3.png"> </label>
 
-                                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" value=4>
+                                <input type="radio" class="btn-check" name="avatar" id="avatar" autocomplete="off" value=4>
                                 <label class="btn btn-secondary" for="option4"> <img src="/src/img/avatares/ava_4.png"> </label>
                             </div>
+                            <input type="submit" value="Crear cuenta" id="boton">
                         </div>
                     </fieldset>
                 </form>
