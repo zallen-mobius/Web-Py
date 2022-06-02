@@ -16,8 +16,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Sketch&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">      <!-- Añadimos el CSS de Bootstrap. -->
         <link rel="stylesheet" href="../src/styles/style.css">        <!-- Se carga el archivo de estilos general -->
-        <link rel="stylesheet" href="../src/styles/nosotros.css">     <!-- Nuestro archivo de estilos propio de esta página. -->
+        <link rel="stylesheet" href="../src/styles/acceso.css">     <!-- Nuestro archivo de estilos propio de esta página. -->
     </head>
     <body>
         <header class="barra" id="menu">      <!--La sección del menu superior, usamos nav porque se usa para navegar en el sitio.-->
@@ -38,10 +39,32 @@
             </ul>       <!-- ul menu-opciones -->
             <a href="../en/access.html"> <img src="../src/img/account_2.png" alt="Aqui deberia ir la imagen de cuenta" id="menu-cuenta"> </a>    <!-- Flaticon -->
         </header>      <!-- nav barra menu -->
+        
+        <div id="contenido">
+            
+            <div id="formulario">
+                <h1> Log in to your account </h1>
+                <form  method="post" action="login.php">
+                        <div id="marco-circular">
+                            <img src="../src/img/account_1.png" class="formulario-objetos" id="avatar-vacio">
+                        </div>      <!-- div marco-circular -->
+                        <div class="formulario-objetos"> 
+                            <label> user: </label> <input type="text"> 
+                        </div>
+                        <div class="formulario-objetos"> 
+                            <label> password: </label> <input type="password"> 
+                        </div>
+                        <div id="formulario-botones">
+                            <input type="submit" value="Log in">
+                            <input type="button" value="Cancel" onclick="location.href='index.html'">
+                        </div>      <!-- div formulario-botones -->
+                </form>     <!-- form -->
+                <div class="links-ayuda"> 
+                    <label> Don't have an account? <a href="create_account.html"> Creat it here. </a> </label> <label>Password forgot? <a href="four_o_four.html">Reestablish </a> </label>
+                </div>
+            </div>      <!-- div formulario-->
 
-
-
-
+        </div>      <!-- div contenido -->
 
         <footer class="barra" id="pie">
             <div id="titulo">
@@ -70,3 +93,9 @@
                 </ul>       <!-- ul scl-logos --> 
             </div>      <!-- div -->
         </footer>       <!-- footer barra pie -->
+
+        <!-- - - - - Scripts - - - - -->
+        
+
+    </body>
+</html>

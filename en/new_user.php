@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Cabin+Sketch&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
         <link rel="stylesheet" href="../src/styles/style.css">        <!-- Se carga el archivo de estilos general -->
-        <link rel="stylesheet" href="../src/styles/nosotros.css">     <!-- Nuestro archivo de estilos propio de esta página. -->
+        <link rel="stylesheet" href="../src/styles/nuevo_usuario.css">     <!-- Nuestro archivo de estilos propio de esta página. -->
     </head>
     <body>
         <header class="barra" id="menu">      <!--La sección del menu superior, usamos nav porque se usa para navegar en el sitio.-->
@@ -38,10 +38,35 @@
             </ul>       <!-- ul menu-opciones -->
             <a href="../en/access.html"> <img src="../src/img/account_2.png" alt="Aqui deberia ir la imagen de cuenta" id="menu-cuenta"> </a>    <!-- Flaticon -->
         </header>      <!-- nav barra menu -->
+        
+        <div id="contenido">
+            
+            <?php
+                include("conect.php");
+            
+                if($_POST){		//Si se ha enviado a trvés de POST
+                    $nombre = $_POST['nombre'];
+                    $apellido = $_POST['apellido'];
+                    $edad = $_POST['edad'];
+                    $correo = $_POST['correo'];
+                    $pass = $_POST['password'];
+                    $usuario = $_POST['usuario'];
+                    $avatar = $_POST['avatar'];
+                    mysqli_query($conexion, "INSERT INTO usuarios(nombres, apellido, edad, correo, pass, usuario, avatar) values ('$nombre', '$apellido', $edad, '$correo', '$pass', '$usuario', $avatar)") or die(mysqli_error($conexion));
+                }
+                mysqli_close($conexion);
+            ?>
+            <div id="aviso-creada">
+                <div id="aviso-creada-objetos">
+                    <h1> You just joined Schooly! </h1>
+                    <div>
+                        <img src="../src/img/valores.jpeg"/>
+                    </div>
+                    <input type="button" value="Continuar" onclick="location.href='index.html'" id="boton">
+                </div>      <!-- div aviso-falta-objetos -->
+            </div>      <!-- aviso-falta -->
 
-
-
-
+        </div>      <!-- div contenido -->
 
         <footer class="barra" id="pie">
             <div id="titulo">
@@ -70,3 +95,9 @@
                 </ul>       <!-- ul scl-logos --> 
             </div>      <!-- div -->
         </footer>       <!-- footer barra pie -->
+
+        <!-- - - - - Scripts - - - - -->
+        
+
+    </body>
+</html>
