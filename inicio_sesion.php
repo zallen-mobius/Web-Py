@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
         <link rel="stylesheet" href="/src/styles/style.css">        <!-- Se carga el archivo de estilos general -->
+        <link rel="stylesheet" href="/src/styles/inicio_sesion.css">
     </head>
     <body>
         <header class="barra" id="menu">      <!--La sección del menu superior, usamos nav porque se usa para navegar en el sitio.-->
@@ -38,13 +39,13 @@
         </header>      <!-- nav barra menu -->
         
         <div id="contenido">
-        <div id="aviso-bienvenida">
+            <div id="aviso-bienvenida">
                 <div id="aviso-bienvenida-objetos">
                     <h1> ¡Bienvenido de nuevo! </h1>
                     <div>
-                        <img src="/src/img/ava_2.png"/>
+                        <img src="/src/img/avatares/ava_2.png"/>
                     </div>
-                    <input type="button" value="Continuar" onclick="location.href='index.html'">
+                    <input type="button" value="Continuar" onclick="location.href='index.html'" id="boton">
                 </div>      <!-- div aviso-falta-objetos -->
             </div>      <!-- aviso-falta -->
         </div>      <!-- div contenido -->

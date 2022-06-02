@@ -7,15 +7,15 @@
 /* Descripción del objetivo del CSS. */
 
 /* - - - Estilo a etiquetas - - - */
-#aviso-creada h1{
+#aviso-bienvenida h1{
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }       /* #aviso-falta h1 */
-#aviso-creada-objetos img{
+#aviso-bienvenida-objetos img{
     width: 100px;
     min-width: 50px;
 }       /* #aviso-falta-objetos img */
-#aviso-creada-objetos div{
+#aviso-bienvenida-objetos div{
     display: flex;
     justify-content: center;
 }       /* #aviso-falta-objetos div */
@@ -28,8 +28,8 @@
     display: flex;
     align-items: center;
 }       /* #contenido */
-#aviso-creada{
-    background-color: var(--color_1);
+#aviso-bienvenida{
+    background-color: white;
     width: 70%;
     height: 70%;
     max-width: 70%;
@@ -40,9 +40,16 @@
     display: flex;
     align-items: center;
 }       /* aviso-falta */
-#aviso-creada-objetos{
+#aviso-bienvenida-objetos{
     margin: auto;
 }       /*#aviso-falta-objetos */
+#boton{
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
 
 /* - - - Tutti-frutti - - - */
 

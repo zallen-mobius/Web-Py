@@ -51,7 +51,7 @@
                     $pass = $_POST['password'];
                     $usuario = $_POST['usuario'];
                     $avatar = $_POST['avatar'];
-                    mysqli_query($conexion, "INSERT INTO usuarios(nombre, apellido, edad, correo, pass, usuario, avatar) values ('$nombre', '$apellido', $edad, '$correo', '$pass', '$usuario', $avatar)") or die(mysqli_error());
+                    mysqli_query($conexion, "INSERT INTO usuarios(nombres, apellido, edad, correo, pass, usuario, avatar) values ('$nombre', '$apellido', $edad, '$correo', '$pass', '$usuario', $avatar)") or die(mysqli_error($conexion));
                 }
                 mysqli_close($conexion);
             ?>
@@ -61,7 +61,7 @@
                     <div>
                         <img src="/src/img/valores.jpeg"/>
                     </div>
-                    <input type="button" value="Continuar" onclick="location.href='index.html'">
+                    <input type="button" value="Continuar" onclick="location.href='index.html'" id="boton">
                 </div>      <!-- div aviso-falta-objetos -->
             </div>      <!-- aviso-falta -->
 

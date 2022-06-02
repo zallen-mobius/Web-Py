@@ -5,8 +5,8 @@
 
 <?php 
 	$server = "localhost";
-	$user = "root";
-	$pass = "";
-	$base = "schooly_db";
+	$user = "id19031556_root";
+	$pass = "(be)OI#_#Sx6_K{J";
+	$base = "id19031556_schooly_db";
 	$conexion = mysqli_connect($server, $user, $pass, $base);
 ?>

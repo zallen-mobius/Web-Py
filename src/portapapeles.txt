@@ -1,15 +1,7 @@
-
-<?php
-	include("conectar.php");
-
-	if($_POST){		//Si se ha enviado a trvés de POST
-		$nombre = $_POST['nombre'];
-		$apellido = $_POST['apellido'];
-		$edad = $_POST['edad'];
-		$correo = $_POST['correo'];
-        $pass = $_POST['password'];
-        $usuario = $_POST['usuario'];
-        $avatar = $_POST['avatar']
-		mysqli_query($conexion, "INSERT INTO usuarios(nombre, apellido, edad, correo, pass, usuario, avatar) values ('$nombre', '$apellido', $edad, '$correo', '$pass', '$usuario', $avatar)") or die(mysqli_error());
-	}
-?>
+#boton{
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}

@@ -43,10 +43,18 @@
 #aviso-creada-objetos{
     margin: auto;
 }       /*#aviso-falta-objetos */
+#boton{
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
 
 /* - - - Tutti-frutti - - - */
 
 
 /* Fuentes
-        
+        font-family: 'Cabin', sans-serif;
+        font-family: 'Cabin Sketch', cursive;
 */
