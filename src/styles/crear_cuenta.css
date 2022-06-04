@@ -1,0 +1,91 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Descripción del objetivo del CSS. */
+
+/* - - - Estilo a etiquetas - - - */
+h3{
+        text-align: center;
+        font-family: 'Cabin Sketch', cursive;
+}               /* h3 */
+input[type="radio"]{
+        appearance: none;
+        background-color: var(--color_4);
+}               /* input[type="radio"] */
+legend{
+        text-align: center;
+        font-family: 'Cabin Sketch', cursive;
+        padding: 0 10px;
+}               /* legend */
+#campos div{
+        height: 80%;
+        margin: 20px;
+        display: grid;
+        grid: repeat(5, 60px) / 100px auto ;
+}               /* #campos div */
+#campos div > input{
+        margin: 10px 0;
+        align-items: center;
+        font-family: 'Cabin', sans-serif;
+        padding-left: 15px;
+}               /* #campos div > input */
+#formulario fieldset{
+        display: inline-block;
+        height: 80%;
+        margin: 20px;    
+}               /* #formulario fieldset */
+#formulario form{
+        display: grid;
+        grid: auto / 55% 45%;
+        height: 100%;
+        margin: 30px;
+        align-items: center;
+}               /* #formulario form */
+#perfil div{
+        height: auto;
+        margin: 20px;
+}               /* #perfil div */
+#perfil div > input{
+        padding-left: 15px;
+}               /* #perfil div > input */
+#perfil div > input#boton{
+        display: block;
+        align-self: center;
+        padding: 0;
+        width: 150px;
+        margin: 0 auto;
+}               /* #perfil div > input#boton */
+
+/* - - - Estilo a clases - - - */
+.etiquetas-campos{
+        display: flex;
+        justify-content: end;
+        margin-right: 10px;
+        align-items: center;
+        font-family: 'Cabin', sans-serif;
+}               /* .etiquetas-campos */
+
+/* - - - Estilo a identificadores - - - */
+#formulario{
+        background-color: var(--color_1);
+        width: 80%;
+        height: 80%;
+        margin: 50px auto;
+        border-radius: 20px;
+}               /* #formulario */
+#input-usuario{
+        display: grid;
+        grid: 40px / 40% 60%;
+        font-family: 'Cabin', sans-serif;
+}               /* #input-usuario */
+
+/* - - - Tutti-frutti - - - */
+
+
+/* Fuentes
+        font-family: 'Cabin', sans-serif;
+        font-family: 'Cabin Sketch', cursive;
+*/

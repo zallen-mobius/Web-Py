@@ -1,0 +1,60 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Descripción del objetivo del CSS. */
+
+/* - - - Estilo a etiquetas - - - */
+#aviso-bienvenida h1{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}       /* #aviso-falta h1 */
+#aviso-bienvenida-objetos img{
+    width: 100px;
+    min-width: 50px;
+}       /* #aviso-falta-objetos img */
+#aviso-bienvenida-objetos div{
+    display: flex;
+    justify-content: center;
+}       /* #aviso-falta-objetos div */
+
+/* - - - Estilo a clases - - - */
+
+
+/* - - - Estilo a identificadores - - - */
+#contenido{
+    display: flex;
+    align-items: center;
+}       /* #contenido */
+#aviso-bienvenida{
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    max-width: 70%;
+    min-width: 40%;
+    max-height: 70%;
+    min-height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}       /* aviso-falta */
+#aviso-bienvenida-objetos{
+    margin: auto;
+}       /*#aviso-falta-objetos */
+#boton{
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}       /* #boton */
+
+/* - - - Tutti-frutti - - - */
+
+
+/* Fuentes:
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Cabin', sans-serif;
+*/

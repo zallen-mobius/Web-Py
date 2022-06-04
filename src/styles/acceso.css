@@ -4,75 +4,59 @@
             (Grupo 14)
 */
 
-/* Este archivo CSS servirá para el formulario de acceso */
-
-:root{
-        --color_1: #ffffff;
-        --color_2: #000000;
-        --color_3: #50e1cd;
-        --color_4: #ff9191;
-}
+/* Descripción del objetivo del CSS. */
 
 /* - - - Estilo a etiquetas - - - */
-#formulario h1{
-        padding: 10px 0;
-        text-align: center;
-        font-family: 'Cabin', sans-serif;
-}               /* #formulario */
-.formulario-objetos label {
-        display: inline-block;
-        width: 120px;
-}               /*.formulario-objetos label */
-div.formulario-objetos {
-        padding: 5px 0;
-        width: 80%;
+.formulario-objetos input{
+        padding: 0px 2px;
+}               /* .formulario-objetos input */
+.links-ayuda label{
+        display: block;
+        width: 40%;
         margin: 0 auto;
+}               /* .links-ayuda label */
+#formulario > *{
+        margin: 0 auto;
+}               /* #formulario > * */
+#formulario h1 {
         text-align: center;
-}               /* .formulario-objetos p */
-div.formulario-objetos label, div.formulario-objetos input{
-        font-family: 'Cabin', sans-serif;
-        padding: 5px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-}
+}               /* #formulario h1 */
 #formulario form{
-        width: 100%;
-        margin: 0 auto;
+        width: 60%;
+        max-width: 70%;
 }               /* #formulario form */
 #formulario-botones input{
         padding: 5px 20px;
         font-family: 'Cabin', sans-serif;
         font-size: large;
-}
+}               /* #formulario-botones input */
 
 /* - - - Estilo a clases - - - */
 .formulario-objetos{
-        display: block;
-        margin: 0 auto;
+        width: 80%;
+        margin: 8px auto;
+        display: grid;
+        grid: auto/ 90px auto;
+
 }               /* .formulario-objetos */
 .links-ayuda{
         font-size:x-small;
-        width: 90%;
+        width: 60%;
         margin: 10px auto;
-
-}
-.links-ayuda label{
-        display: block;
-        width: 40%;
-        margin: 0 auto;
-}
+}               /* .links-ayuda */
 
 /* - - - Estilo a identificadores - - - */
 #avatar-vacio{
-        width: 150px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
 }               /* #avatar-vacio */
 #formulario{
         background-color: var(--color_1);
-        min-height: 80%;
-        width: 40%;
+        width: 50%;
+        height: 80%;
+        max-height: 80%;
         margin: 50px auto;
-        border: solid var(--color_2) 3px;
-        border-radius: 10px;
 }               /* #formulario */
 #formulario-botones{
         display: flex;
@@ -87,6 +71,9 @@ div.formulario-objetos label, div.formulario-objetos input{
         margin: 0 auto;
         margin-bottom: 20px;
 }               /* #marco-circular */
+
+/* - - - Tutti-frutti - - - */
+
 
 /* Fuentes
         font-family: 'Cabin', sans-serif;

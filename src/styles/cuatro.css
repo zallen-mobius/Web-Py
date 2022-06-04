@@ -1,0 +1,52 @@
+/*       Programación Web
+         -Proyecto WebPy-
+    López Carranza - Medina Sifuentes
+            (Grupo 14)
+*/
+
+/* Este conjunto de estilos se aplicará a las páginas que muestran el aviso de no disponible. */
+
+/* - - - Estilo a etiquetas - - - */
+#aviso-falta h1{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}       /* #aviso-falta h1 */
+#aviso-falta-objetos img{
+    width: 100px;
+    min-width: 50px;
+}       /* #aviso-falta-objetos img */
+#aviso-falta-objetos div{
+    display: flex;
+    justify-content: center;
+}       /* #aviso-falta-objetos div */
+
+/* - - - Estilo a clases - - - */
+
+
+/* - - - Estilo a identificadores - - - */
+#contenido{
+    display: flex;
+    align-items: center;
+}       /* #contenido */
+#aviso-falta{
+    background-color: var(--color_1);
+    width: 70%;
+    height: 70%;
+    max-width: 70%;
+    min-width: 40%;
+    max-height: 70%;
+    min-height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}       /* aviso-falta */
+#aviso-falta-objetos{
+    margin: auto;
+}       /*#aviso-falta-objetos */
+
+/* - - - Tutti-frutti - - - */
+
+
+/* Fuentes
+    font-family: 'Rubik', sans-serif;
+*/

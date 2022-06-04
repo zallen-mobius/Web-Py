@@ -9,13 +9,6 @@
         con estilos muy básicos para el sitio completo. */
 
 /* - - - Estilo a etiquetas - - - */
-
-/* - - - Estilo a clases - - - */
-.carousel{
-    width: 55%;
-    display: block;
-    margin: 0 auto;
-}
 .carousel label{
     display: block;
     width: 250px;
@@ -23,6 +16,29 @@
     background-color: var(--color_1);
     color: var(--color_2);
     border-radius: 10px;
-}
+}       /* .carousel label */
+
+/* - - - Estilo a clases - - - */
+.carousel{
+    width: 70%;
+    margin: auto;
+}       /* .carousel */
 
 /* - - - Estilo a identificadores - - - */
+#contenido{
+    display: flex;
+}       /* contenido */
+#portada{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}       /* #portada */
+
+/* - - - Tutti-frutti - - - */
+
+/* Fuentes:
+
+*/

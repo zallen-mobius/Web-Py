@@ -5,23 +5,22 @@
 <!--            (Grupo 14)             -->
 
 <html lang="es">
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Proyecto </title>
-    <!-- links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">     <!-- uso de Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">      <!-- Añadimos el CSS de Bootstrap. -->
-    <link href="src/styles/style.css" rel="stylesheet" >       <!-- Se carga el archivo de estilos general -->
-    <link href="src/styles/acceso.css" rel="stylesheet" >       <!-- Archivo de estilo de formulario de acceso -->
-</head>
+    <head>
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Proyecto </title>
+        <!-- links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">     <!-- uso de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Rubik&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap" rel="stylesheet">    <!-- Esta es la que se va a cambiar con cada nueva fuente. -->
+        <link rel="stylesheet" href="src/styles/style.css">        <!-- Se carga el archivo de estilos general -->
+        <link rel="stylesheet" href="src/styles/nuevo_usuario.css">
+    </head>
     <body>
         <header class="barra" id="menu">      <!--La sección del menu superior, usamos nav porque se usa para navegar en el sitio.-->
-            <a href="/index.html"> <img src="src/img/icon.png" alt="Aqui debería ir el logo" id="menu-logo"> </a>      <!-- Flaticon -->
+            <a href="index.html"> <img src="src/img/icon.png" alt="Aqui debería ir el logo" id="menu-logo"> </a>      <!-- Flaticon -->
             <ul id="menu-opciones">
                 <li>
                     <a href="cuatro_cero_cuatro.html"> Jugar </a>     <!-- Esta pestaña llevara a un formulario que pedira un codigo -->
@@ -41,27 +40,30 @@
         
         <div id="contenido">
             
-            <div id="formulario">
-                <h1> Ingresa a tu cuenta </h1>
-                <form  method="post" action="inicio_sesion.php">
-                        <div id="marco-circular">
-                            <img src="src/img/account_1.png" class="formulario-objetos" id="avatar-vacio">
-                        </div>      <!-- div marco-circular -->
-                        <div class="formulario-objetos"> 
-                            <label> usuario: </label> <input type="text"> 
-                        </div>      <!-- div formulario-objetos -->
-                        <div class="formulario-objetos"> 
-                            <label> contraseña: </label> <input type="password"> 
-                        </div>      <!-- div formulario-objetos -->
-                        <div id="formulario-botones">
-                            <input type="submit" value="Ingresar">
-                            <input type="button" value="Cancelar" onclick="location.href='index.html'">
-                        </div>      <!-- div formulario-botones -->
-                </form>     <!-- form -->
-                <div class="links-ayuda"> 
-                    <label> ¿No tienes una cuenta? <a href="crear_cuenta.html">Crea una aquí. </a> </label> <label>¿Olvidaste tu contraseña? <a href="restaurar_cuenta.html">Reestablecela. </a> </label>
-                </div>      <!-- div links-ayuda-->
-            </div>      <!-- div formulario-->
+            <?php
+                include("conectar.php");
+            
+                if($_POST){		//Si se ha enviado a trvés de POST
+                    $nombre = $_POST['nombre'];
+                    $apellido = $_POST['apellido'];
+                    $edad = $_POST['edad'];
+                    $correo = $_POST['correo'];
+                    $pass = $_POST['password'];
+                    $usuario = $_POST['usuario'];
+                    $avatar = $_POST['avatar'];
+                    mysqli_query($conexion, "INSERT INTO usuarios(nombres, apellido, edad, correo, pass, usuario, avatar) values ('$nombre', '$apellido', $edad, '$correo', '$pass', '$usuario', $avatar)") or die(mysqli_error($conexion));
+                }
+                mysqli_close($conexion);
+            ?>
+            <div id="aviso-creada">
+                <div id="aviso-creada-objetos">
+                    <h1> ¡Ya eres parte de Schooly! </h1>
+                    <div>
+                        <img src="src/img/valores.jpeg"/>
+                    </div>
+                    <input type="button" value="Continuar" onclick="location.href='index.html'" id="boton">
+                </div>      <!-- div aviso-falta-objetos -->
+            </div>      <!-- aviso-falta -->
 
         </div>      <!-- div contenido -->
 
