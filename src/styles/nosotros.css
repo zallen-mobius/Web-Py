@@ -25,10 +25,10 @@
 }       /* #mapa h1 */
 #mapa-contenido > *{
     display: inline-flex;
-}
+}       /* #mapa-contenido > * */
 #mapa-contenido img{
     width: 250px;
-}
+}       /* #mapa-contenido img */
 
 /* - - - Estilo a clases - - - */
 .info{
@@ -36,7 +36,7 @@
     grid: auto / auto auto;
     width: 80%;
     margin: 25px auto;
-}
+}       /* .info */
 
 /* - - - Estilo a identificadores - - - */
 #informacion{
@@ -53,12 +53,12 @@
     margin: 40px auto;
     border-radius: 20px;
     padding: 20px 40px 40px 40px;
-}
+}       /* #mapa */
 
 /* - - - Tutti-frutti - - - */
 
 
-/* Fuentes
-        font-family: 'Cabin', sans-serif;
-        font-family: 'Cabin Sketch', cursive;
+/* Fuentes:
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
 */
